@@ -1,7 +1,9 @@
+import Intro from "@/components/intro";
+
 export default function Home() {
   return (
     <div>
-      <h1>worldBuilders</h1>
+      <Intro />
     </div>
   );
 }
