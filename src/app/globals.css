@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "pixelify";
+  src: url("/fonts/PixelifySans-Medium.ttf");
+}
+
 @theme inline {
   --color-mainColor: #000;
+  --font-pixelify: "pixelify", sans-serif;
 }
 
 body {

@@ -1,6 +1,10 @@
+import Navigation from "./navigation";
+
 const Intro = () => {
     return(
-        <div>Intro</div>
+        <div className="relative h-dvh w-dvw font-pixelify">
+            <Navigation />
+        </div>
     )
 }
 export default Intro;
