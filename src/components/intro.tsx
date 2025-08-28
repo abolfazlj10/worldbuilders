@@ -22,7 +22,7 @@ const Intro = () => {
                     <span>3</span>
                     <span>r</span>
                 </div>
-                <div className="text-6xl opacity-75 flex justify-end -mt-10">zzz</div>
+                <div className="text-6xl opacity-75 flex justify-end -mt-10 -mr-40">zzz</div>
             </div>
             <Navigation />
         </div>
