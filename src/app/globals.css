@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-mainColor: #000;
+}
+
+body {
+  
+}
