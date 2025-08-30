@@ -34,9 +34,9 @@ import Navigation from "./navigation";
 const Intro = () => {
     return(
         <div className="relative h-dvh w-dvw font-pixelify flex items-center justify-center overflow-hidden">
-            <div className="grid grid-cols-4 grid-rows-7 h-full pb-40 pr-3">
-                <div className="text-5xl opacity-75 text-vertical row-span-7 flex items-end">(Digital)</div>
-                <div className="text-[100px] flex items-center gap-7 opacity-90 text-vertical row-span-7">
+            <div className="grid grid-cols-4 pb-40 mt-auto">
+                <div className="text-5xl opacity-75 text-vertical flex items-end">(Digital)</div>
+                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 text-vertical">
                     <span>W</span>
                     <img src="/image/pxArt__1_-removebg-preview 1.png" alt="w" className="object-contain w-[100px]" />
                     <span>r</span>
@@ -44,7 +44,7 @@ const Intro = () => {
                     <span>d</span>
                     <img src="/image/_.png" alt="w" className="object-contain w-[80px]" />
                 </div>
-                <div className="text-[100px] flex gap-7 opacity-90 text-vertical row-span-7">
+                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 text-vertical relative">
                     <span>B</span>
                     <span>u</span>
                     <span className="text-secondBlue font-IBM">!</span>
@@ -53,7 +53,7 @@ const Intro = () => {
                     <span>3</span>
                     <span>r</span>
                 </div>
-                <div className="text-6xl opacity-75 text-vertical row-span-3">zzz</div>
+                <div className="text-6xl opacity-75 text-vertical mb-auto">zzz</div>
             </div>
             <Navigation />
         </div>
