@@ -1,5 +1,5 @@
 import Navigation from "./navigation"
-export default function AboutWe () {
+const  AboutWe = () => {
     return(
         <div id="AboutWe" tabIndex={2} className="h-dvh w-dvw overflow-hidden relative">
             <div className="flex flex-col py-20 px-10">
@@ -13,3 +13,4 @@ export default function AboutWe () {
         </div>
     )
 }
+export default AboutWe
