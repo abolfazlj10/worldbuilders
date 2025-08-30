@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "worldBuilders",
   description: "world with eyes of worldbuilders by Abolfazl_j10",
   icons: {
-    icon: "/favicon.png",
+    icon: "/icon.ico",
   },
 };
 
