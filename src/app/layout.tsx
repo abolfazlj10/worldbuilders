@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../styles/global.css";
 
 export const metadata: Metadata = {
   title: "worldBuilders",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-h-dvh overflow-y-hidden">
+      <body className="font-pixelify">
         {children}
       </body>
     </html>
