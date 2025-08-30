@@ -34,9 +34,9 @@ import Navigation from "./navigation";
 const Intro = () => {
     return(
         <div className="relative h-dvh w-dvw font-pixelify flex items-center justify-center overflow-hidden">
-            <div className="grid grid-cols-4 pb-40 mt-auto">
-                <div className="text-5xl opacity-75 text-vertical flex items-end">(Digital)</div>
-                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 text-vertical">
+            <div className="grid grid-cols-4 pb-40 mt-auto md:grid-cols-none">
+                <div className="text-5xl opacity-75 max-md:[writing-mode:vertical-rl] max-md:[transform:rotate(180deg)] md:[writing-mode:horizontal-tb] flex items-end">(Digital)</div>
+                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 max-md:[writing-mode:vertical-rl] max-md:[transform:rotate(180deg)] md:[writing-mode:horizontal-tb]">
                     <span>W</span>
                     <img src="/image/pxArt__1_-removebg-preview 1.png" alt="w" className="object-contain w-[100px]" />
                     <span>r</span>
@@ -44,7 +44,7 @@ const Intro = () => {
                     <span>d</span>
                     <img src="/image/_.png" alt="w" className="object-contain w-[80px]" />
                 </div>
-                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 text-vertical relative">
+                <div className="text-[100px] flex items-center justify-start gap-7 opacity-90 max-md:[writing-mode:vertical-rl] max-md:[transform:rotate(180deg)] md:[writing-mode:horizontal-tb] relative">
                     <span>B</span>
                     <span>u</span>
                     <span className="text-secondBlue font-IBM">!</span>
@@ -53,7 +53,7 @@ const Intro = () => {
                     <span>3</span>
                     <span>r</span>
                 </div>
-                <div className="text-6xl opacity-75 text-vertical mb-auto">zzz</div>
+                <div className="text-6xl opacity-75 max-md:[writing-mode:vertical-rl] max-md:[transform:rotate(180deg)] md:[writing-mode:horizontal-tb] mb-auto">zzz</div>
             </div>
             <Navigation />
         </div>

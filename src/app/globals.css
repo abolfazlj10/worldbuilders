@@ -37,7 +37,12 @@ body:before {
   width: 100%;
   height: 100%;
 }
-.text-vertical {
-  writing-mode: vertical-rl;
+ .text-vertical {
   transform: rotate(180deg);
-}
+}/*
+@media only screen and (max-width: 768px) {
+  .text-vertical{
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+} */
