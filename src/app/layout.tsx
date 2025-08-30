@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-h-dvh">
+      <body className="max-h-dvh overflow-y-hidden">
         {children}
       </body>
     </html>

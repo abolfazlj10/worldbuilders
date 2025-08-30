@@ -3,7 +3,7 @@ import Intro from "@/components/intro";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex w-[400dvw]">
       <Intro />
       <AboutWe />
     </div>
