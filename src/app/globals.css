@@ -22,6 +22,7 @@ body {
   color:#fff;
   position: relative;
   background: #000;
+  cursor: url("/image/cursor.png") 10 10, auto;
 }
 
 body:before {
@@ -39,10 +40,4 @@ body:before {
 }
  .text-vertical {
   transform: rotate(180deg);
-}/*
-@media only screen and (max-width: 768px) {
-  .text-vertical{
-    writing-mode: horizontal-tb;
-    transform: none;
-  }
-} */
+}
