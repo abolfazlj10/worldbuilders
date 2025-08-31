@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-pixelify md:overflow-y-hidden">
+      <body>
         {children}
       </body>
     </html>
