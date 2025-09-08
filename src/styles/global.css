@@ -15,6 +15,7 @@
 
 html{
   @apply md:!overflow-y-hidden;
+  scroll-behavior: smooth;
 }
 
 body {
