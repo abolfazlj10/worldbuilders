@@ -1,4 +1,5 @@
 import GlassSurface from './GlassSurface'
+import Image from 'next/image'
 
 interface ContactProps {
     onNavigate?: (sectionId: string) => void;
@@ -9,9 +10,9 @@ const Contact = ({ onNavigate }: ContactProps) => {
         <div id="contact" tabIndex={4} className="h-dvh w-dvw relative flex flex-col py-20 px-10 md:px-24 md:pt-10">
             <div className="text-secondBlue text-[55px] text-center font-bold">CONTACT US</div>
             <div className="flex-1 flex justify-center gap-10 items-center">
-                <img src="/image/FaWKMJQnr2PFcYCmEyfiTm-1200-80-removebg-preview 2.png" alt="floor core image" className="w-[250px]" />
-                <img src="/image/_.png" alt="w" className="object-contain w-[240px]" />
-                <img src="/image/FullMoon2010-removebg-preview 2.png" alt="floor core image" className="w-[250px]" />
+                <Image src="/image/FaWKMJQnr2PFcYCmEyfiTm-1200-80-removebg-preview 2.png" alt="floor core image" width={250} height={250} className="w-[250px]" />
+                <Image src="/image/_.png" alt="w" width={240} height={240} className="object-contain w-[240px]" />
+                <Image src="/image/FullMoon2010-removebg-preview 2.png" alt="floor core image" width={250} height={250} className="w-[250px]" />
             </div>
             <div className="mx-auto relative">
                 <div className="text-[20px] opacity-65 md:text-[15px]">(Digital)</div>

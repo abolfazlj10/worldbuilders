@@ -10,7 +10,7 @@ interface UseScrollSnapOptions {
 export const useScrollSnap = ({ isDesktop, sections }: UseScrollSnapOptions) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrollingRef = useRef(false);
-  const scrollTimeoutRef = useRef<NodeJS.Timeout>();
+  const scrollTimeoutRef = useRef<NodeJS.Timeout>(null);
   const currentSectionRef = useRef(0);
 
   const scrollToSection = useCallback((sectionIndex: number) => {
