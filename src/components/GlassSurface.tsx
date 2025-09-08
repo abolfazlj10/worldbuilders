@@ -211,8 +211,8 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       width: typeof width === 'number' ? `${width}px` : width,
       height: typeof height === 'number' ? `${height}px` : height,
       borderRadius: `${borderRadius}px`,
-      '--glass-frost': backgroundOpacity,
-      '--glass-saturation': saturation
+      ['--glass-frost' as any]: backgroundOpacity,
+      ['--glass-saturation' as any]: saturation
     };
 
     // در سرور یا قبل از mount شدن، استایل ساده برگردانید
