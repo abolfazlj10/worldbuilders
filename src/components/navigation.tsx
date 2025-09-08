@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 
 const Navigation = ({theHref, introRef} : {theHref: string, introRef?: React.RefObject<HTMLDivElement>}) => {
     // Scroll to intro section on page load/refresh
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (introRef?.current) {
             introRef.current.scrollIntoView({
-                behavior: 'smooth',
+                behavior: 'auto', // بدون انیمیشن برای رفرش
                 block: 'start'
             });
         }
