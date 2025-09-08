@@ -18,6 +18,17 @@ html{
   scroll-behavior: smooth;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 body {
   @apply h-[400dvh] w-full text-white relative bg-black font-pixelify md:overflow-y-hidden md:flex;
   cursor: url("/image/cursor.png") 10 10, auto;
