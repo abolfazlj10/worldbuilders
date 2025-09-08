@@ -1,27 +1,19 @@
 "use client";
 
-import React, { useLayoutEffect, useRef } from 'react';
+import React from 'react';
 
-const Navigation = ({theHref, introRef} : {theHref: string, introRef?: React.RefObject<HTMLDivElement>}) => {
-    // Scroll to intro section on page load/refresh
-    useLayoutEffect(() => {
-        if (introRef?.current) {
-            introRef.current.scrollIntoView({
-                behavior: 'auto', // بدون انیمیشن برای رفرش
-                block: 'start'
-            });
-        }
-    }, [introRef]);
+interface NavigationProps {
+    theHref: string;
+    onNavigate?: (sectionId: string) => void;
+}
+
+const Navigation = ({ theHref, onNavigate }: NavigationProps) => {
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         const targetId = theHref.replace('#', '');
-        const targetElement = document.getElementById(targetId);
         
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        if (onNavigate) {
+            onNavigate(targetId);
         }
     };
 

@@ -1,6 +1,10 @@
 import Navigation from "./navigation"
 
-const Services = () => {
+interface ServicesProps {
+    onNavigate?: (sectionId: string) => void;
+}
+
+const Services = ({ onNavigate }: ServicesProps) => {
     return(
         <div id="services" tabIndex={3} className="h-dvh w-dvw relative overflow-x-hidden">
             <div className="px-5 md:px-0 h-full">
@@ -29,7 +33,7 @@ const Services = () => {
                     <div>Clean</div>
                 </div>
             </div>
-            <Navigation theHref="#contact" />
+            <Navigation theHref="#contact" onNavigate={onNavigate} />
         </div>
     )
 }
