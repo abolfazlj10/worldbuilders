@@ -1,6 +1,17 @@
 "use client";
 
-const Navigation = ({theHref} : {theHref: string}) => {
+import React, { useEffect, useRef } from 'react';
+
+const Navigation = ({theHref, introRef} : {theHref: string, introRef?: React.RefObject<HTMLDivElement>}) => {
+    // Scroll to intro section on page load/refresh
+    useEffect(() => {
+        if (introRef?.current) {
+            introRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, [introRef]);
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         const targetId = theHref.replace('#', '');
