@@ -168,7 +168,8 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
     blueOffset,
     xChannel,
     yChannel,
-    mixBlendMode
+    mixBlendMode,
+    updateDisplacementMap
   ]);
 
   useEffect(() => {
@@ -183,7 +184,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
     return () => {
       resizeObserver.disconnect();
     };
-  }, [isMounted]);
+  }, [isMounted, updateDisplacementMap]);
 
   const supportsSVGFilters = () => {
     if (typeof window === 'undefined' || !isMounted) return false;
@@ -211,8 +212,8 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       width: typeof width === 'number' ? `${width}px` : width,
       height: typeof height === 'number' ? `${height}px` : height,
       borderRadius: `${borderRadius}px`,
-      ['--glass-frost' as any]: backgroundOpacity,
-      ['--glass-saturation' as any]: saturation
+      ['--glass-frost' as keyof React.CSSProperties]: backgroundOpacity,
+      ['--glass-saturation' as keyof React.CSSProperties]: saturation
     };
 
     // در سرور یا قبل از mount شدن، استایل ساده برگردانید

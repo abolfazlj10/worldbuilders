@@ -95,7 +95,7 @@ export const useScrollSnap = ({ isDesktop, sections }: UseScrollSnapOptions) => 
     }, 150); // 150ms delay to detect scroll end
   }, [isDesktop, sections, scrollToSection]);
 
-  const handleWheel = useCallback((e: WheelEvent) => {
+  const handleWheel = useCallback(() => {
     // Let the browser handle scrolling naturally
     // We'll only handle snapping when scrolling stops
   }, []);

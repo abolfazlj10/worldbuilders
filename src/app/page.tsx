@@ -11,7 +11,7 @@ export default function Home() {
   const [isDesktop, setIsDesktop] = useState(false);
   const sections = ["intor", "AboutWe", "services", "contact"];
   
-  const { containerRef, scrollToSection, currentSection } = useScrollSnap({
+  const { containerRef, scrollToSection } = useScrollSnap({
     isDesktop,
     sections
   });
@@ -47,7 +47,7 @@ export default function Home() {
           <Services onNavigate={handleNavigate} />
         </div>
         <div className={`scroll-section ${isDesktop ? 'w-screen flex-shrink-0' : 'h-screen flex-shrink-0'}`}>
-          <Contact onNavigate={handleNavigate} />
+          <Contact />
         </div>
       </div>
     </div>

@@ -1,11 +1,7 @@
 import GlassSurface from './GlassSurface'
 import Image from 'next/image'
 
-interface ContactProps {
-    onNavigate?: (sectionId: string) => void;
-}
-
-const Contact = ({ onNavigate }: ContactProps) => {
+const Contact = () => {
     return(
         <div id="contact" tabIndex={4} className="h-dvh w-dvw relative flex flex-col py-20 px-10 md:px-24 md:pt-10">
             <div className="text-secondBlue text-[55px] text-center font-bold">CONTACT US</div>
