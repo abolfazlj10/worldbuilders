@@ -20,7 +20,7 @@ const Services = ({ onNavigate }: ServicesProps) => {
                     <span>l</span>
                     <span>d</span>
                 </div>
-                <div className="font-IBM md:text-center md:text-[22px] text-[20px] md:tracking-[16px] tracking-[1px] opacity-75 ">WorldBuilderzzz Style & Unique</div>
+                <div className="font-IBM md:text-center md:text-[22px] text-[18px] md:tracking-[16px] opacity-75 ">WorldBuilderzzz Style & Unique</div>
                 <div className="flex justify-between md:text-[100px] text-[70px] md:w-6/12 w-4/12 mt-16 md:mt-0">
                     <span>W</span>
                     <span>e</span>
